@@ -323,33 +323,32 @@ img{
 =========================== */
 
 #hero{
-    position:absolute;
+    position: fixed;
+    inset: 0;
 
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    width:90%;
-    max-width:900px;
-    max-height:90vh;
+    width: min(90%, 900px);
+    margin: auto;
 
-    padding:60px;
+    text-align: center;
 
-    text-align:center;
+    padding: 60px;
 
-    border-radius:25px;
+    border-radius: 25px;
 
-    backdrop-filter:blur(25px);
-    background:rgba(255,255,255,.10);
-    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(25px);
+    background: rgba(255,255,255,.10);
+    border: 1px solid rgba(255,255,255,.15);
 
     box-shadow:
         0 25px 90px rgba(0,0,0,.45),
         0 0 50px rgba(255,105,180,.12);
 
-    overflow:hidden;
-
-    opacity:0;
+    opacity: 0;
 }
 
 .tagline{
@@ -433,23 +432,34 @@ img{
 @media (max-width:768px){
 
     #hero{
+
         width:92%;
-        padding:28px;
-        max-height:90vh;
+        height:auto;
+
+        padding:28px 22px;
+
+        justify-content:center;
+
     }
 
     #hero h1{
-        font-size:2rem;
+
+        font-size:48px;
+
     }
 
     #hero h2{
-        font-size:3rem;
+
+        font-size:58px;
+
     }
 
     #typed{
-        font-size:1rem;
-        line-height:1.6;
+
+        font-size:18px;
+
     }
+
 
 #typed{
 
