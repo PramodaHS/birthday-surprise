@@ -15,12 +15,21 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    overflow:hidden;
-    overflow-x:hidden;
     background:#030712;
     color:white;
-    height:100vh;
-    width:100%;
+
+    margin:0;
+
+    width:100vw;
+    height:100dvh;
+
+    overflow:hidden;
+
+    position:fixed;
+
+    inset:0;
+
+    touch-action:manipulation;
 }
 
 img{
@@ -135,7 +144,7 @@ img{
 
     content:"";
 
-    position:absolute;
+    position:fixed;
 
     width:600px;
     height:600px;
@@ -157,7 +166,7 @@ img{
 
     content:"";
 
-    position:absolute;
+    position:fixed;
 
     width:500px;
     height:500px;
@@ -289,7 +298,7 @@ img{
 
 .moon{
 
-    position:absolute;
+    position:fixed;
 
     width:170px;
     height:170px;
@@ -315,7 +324,7 @@ img{
 
 #hero{
 
-    position:absolute;
+    position:fixed;
 
     top:50%;
     left:50%;
@@ -473,7 +482,7 @@ img{
 
 #giftScene{
 
-    position:absolute;
+    position:fixed;
 
     inset:0;
 
@@ -493,7 +502,7 @@ img{
 
 .gift-glow{
 
-    position:absolute;
+    position:fixed;
 
     width:320px;
 
@@ -593,7 +602,7 @@ img{
 
 #birthdayScene{
 
-    position:absolute;
+    position:fixed;
     inset:0;
 
     display:none;
@@ -758,7 +767,7 @@ img{
 
 .balloon{
 
-    position:absolute;
+    position:fixed;
 
     width:90px;
 
@@ -838,7 +847,7 @@ img{
 
 .sparkle{
 
-    position:absolute;
+    position:fixed;
 
     width:40px;
 
@@ -904,7 +913,7 @@ img{
 
 .rabbit{
 
-    position:absolute;
+    position:fixed;
 
     right:50px;
 
@@ -944,7 +953,7 @@ img{
 
 #favoritesScene{
 
-    position:absolute;
+    position:fixed;
 
     inset:0;
 
@@ -1118,7 +1127,7 @@ img{
 
 #terminalScene{
 
-    position:absolute;
+    position:fixed;
     inset:0;
 
     display:none;
@@ -1232,7 +1241,7 @@ img{
 
 #letterScene{
 
-    position:absolute;
+    position:fixed;
     inset:0;
 
     display:none;
@@ -1412,7 +1421,7 @@ section{
 
     section{
         padding:40px 18px;
-        min-height:100vh;
+        
     }
 
     h1{
@@ -1505,7 +1514,7 @@ section{
 }
 
 .page{
-    position:absolute;
+    position:fixed;
     width:100%;
     top:0;
     left:0;
