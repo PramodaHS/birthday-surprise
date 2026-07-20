@@ -323,35 +323,33 @@ img{
 =========================== */
 
 #hero{
-
-    position:fixed;
+    position:absolute;
 
     top:50%;
     left:50%;
-
     transform:translate(-50%,-50%);
 
     width:90%;
     max-width:900px;
-
-    text-align:center;
+    max-height:90vh;
 
     padding:60px;
+
+    text-align:center;
 
     border-radius:25px;
 
     backdrop-filter:blur(25px);
-
     background:rgba(255,255,255,.10);
-
     border:1px solid rgba(255,255,255,.15);
 
     box-shadow:
-          0 25px 90px rgba(0,0,0,.45),
-          0 0 50px rgba(255,105,180,.12);
+        0 25px 90px rgba(0,0,0,.45),
+        0 0 50px rgba(255,105,180,.12);
+
+    overflow:hidden;
 
     opacity:0;
-
 }
 
 .tagline{
@@ -432,25 +430,26 @@ img{
    MOBILE
 =========================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-#hero{
+    #hero{
+        width:92%;
+        padding:28px;
+        max-height:90vh;
+    }
 
-    padding:35px;
+    #hero h1{
+        font-size:2rem;
+    }
 
-}
+    #hero h2{
+        font-size:3rem;
+    }
 
-#hero h1{
-
-    font-size:42px;
-
-}
-
-#hero h2{
-
-    font-size:58px;
-
-}
+    #typed{
+        font-size:1rem;
+        line-height:1.6;
+    }
 
 #typed{
 
@@ -482,7 +481,8 @@ img{
 
 #giftScene{
 
-    position:fixed;
+    position:absolute;
+    inset:0;
 
     inset:0;
 
@@ -602,7 +602,7 @@ img{
 
 #birthdayScene{
 
-    position:fixed;
+    position:absolute;
     inset:0;
 
     display:none;
@@ -953,8 +953,7 @@ img{
 
 #favoritesScene{
 
-    position:fixed;
-
+    position:absolute;
     inset:0;
 
     display:none;
@@ -1127,7 +1126,7 @@ img{
 
 #terminalScene{
 
-    position:fixed;
+    position:absolute;
     inset:0;
 
     display:none;
@@ -1241,7 +1240,7 @@ img{
 
 #letterScene{
 
-    position:fixed;
+    position:absolute;
     inset:0;
 
     display:none;
@@ -1420,7 +1419,7 @@ section{
 @media (max-width: 768px) {
 
     section{
-        padding:40px 18px;
+        padding:20px 16px;
         
     }
 
