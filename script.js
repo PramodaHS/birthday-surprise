@@ -134,29 +134,37 @@ function showHero(){
 
 function startTyping(){
 
-new Typed("#typed",{
+    new Typed("#typed",{
 
-strings:[
+        strings:[
 
-"Hi Priyanka 👋",
+            "Hey Priyanka 👋",
 
-"Happy Birthday 🎉",
+            "I made a little surprise for you.",
 
-"I wanted to build something instead of simply sending a message.",
+            "Hope this makes you smile 😊"
 
-"Hope this makes you smile 😊"
+        ],
 
-],
+        typeSpeed:45,
+        backSpeed:20,
+        backDelay:1800,
 
-typeSpeed:45,
+        loop:false,
 
-backSpeed:20,
+        showCursor:true,
 
-backDelay:1800,
+        onComplete:function(self){
 
-loop:true
+            setTimeout(()=>{
 
-});
+                self.cursor.remove();
+
+            },500);
+
+        }
+
+    });
 
 }
 
