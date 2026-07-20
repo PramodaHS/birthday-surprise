@@ -27,15 +27,15 @@ hero.style.display = "none";
 
 const loadingMessages = [
 
-    "Loading Magic...",
+    "✨ Loading Magic...",
 
-    "Preparing Birthday Wishes...",
+    "🎂 Preparing Birthday Wishes...",
 
-    "Adding Sparkles...",
+    "✨ Adding Sparkles...",
 
-    "Wrapping Your Surprise...",
+    "🎁 Wrapping Your Surprise...",
 
-    "Almost Ready..."
+    "💖 Almost Ready..."
 
 ];
 
@@ -73,7 +73,8 @@ const loaderAnimation = setInterval(() => {
 
             opacity:0,
 
-            duration:1,
+            duration:0.8,
+            ease:"power2.out",
 
             onComplete:()=>{
 

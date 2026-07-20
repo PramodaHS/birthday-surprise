@@ -44,17 +44,24 @@ body{
 
 #loader h1{
 
-    font-size:32px;
+    font-size:clamp(1.6rem,5vw,2rem);
 
-    margin-bottom:40px;
+    margin-bottom:32px;
 
     color:#fff;
+
+    text-align:center;
+
+    padding:0 20px;
+
+    line-height:1.4;
 
 }
 
 .progress{
 
-    width:320px;
+    width:min(320px,85vw);
+
     height:10px;
 
     background:#222;
@@ -62,6 +69,8 @@ body{
     border-radius:50px;
 
     overflow:hidden;
+
+    box-shadow:0 0 15px rgba(255,105,180,.15);
 
 }
 
@@ -75,15 +84,23 @@ body{
 
     background:linear-gradient(90deg,#ff69b4,#ffb6c1);
 
+    box-shadow:0 0 18px rgba(255,105,180,.55);
+
 }
 
 #loadingText{
 
-    margin-top:25px;
+    margin-top:22px;
 
     color:#ddd;
 
-    letter-spacing:2px;
+    letter-spacing:1px;
+
+    font-size:.95rem;
+
+    text-align:center;
+
+    padding:0 20px;
 
 }
 
