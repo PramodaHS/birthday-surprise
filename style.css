@@ -805,18 +805,33 @@ img{
 
 }
 
+.balloons{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:2;
+
+}
+
 /* ===========================
    Balloons
 =========================== */
 
 .balloon{
 
-    position:fixed;
+    position:absolute;
 
-    width:55px;
-    opacity:.75;
+    width:70px;
 
-    animation:floatBalloon 8s linear infinite;
+    opacity:.9;
+
+    z-index:2;
+
+    animation:floatBalloon 10s linear infinite;
 
 }
 
@@ -1436,12 +1451,13 @@ img{
 
     }
 
-    .birthday-card{
+.birthday-card{
 
     width:92%;
 
-     padding:25px 22px;
+    padding:20px 20px;
 
+}
 }
 
 .cake{
@@ -1462,33 +1478,68 @@ img{
 
 .birthday-card h1{
 
-    font-size:48px;
+    font-size:44px;
+
+    margin:8px 0;
 
 }
 
 .birthday-card h2{
-    margin:8px 0 15px;
+
+    font-size:50px;
+
+    margin:5px 0 12px;
+
 }
 
 .birthday-card p{
 
-    font-size:18px;
+    font-size:17px;
 
-    line-height:1.7;
+    line-height:1.55;
+
+    margin:14px auto;
 
 }
+
+.balloon{
+
+    width:45px;
+
+}
+
+.b1{ left:4%; }
+
+.b2{ left:18%; }
+
+.b3{ right:16%; }
+
+.b4{ right:4%; }
+
+.b5{ left:48%; }
 
 .rabbit{
 
-    width:80px;
+    width:70px;
 
-    right:8px;
+    right:0;
 
-    bottom:110px;
+    bottom:95px;
+
+}
+
+.moon{
+
+    width:130px;
+
+    height:130px;
+
+    top:30px;
+
+    right:-35px;
 
 }
 
-}
 
 /* ===========================
    SCENE TRANSITIONS
@@ -1547,12 +1598,19 @@ section{
         padding:25px;
     }
 
-    button{
-        width:100%;
-        max-width:320px;
-        font-size:18px;
-    }
+button{
 
+    width:85%;
+
+    max-width:280px;
+
+    height:58px;
+
+    font-size:20px;
+
+    margin-top:18px;
+
+}
 /* ===========================
    MEMORY GRID
 =========================== */
