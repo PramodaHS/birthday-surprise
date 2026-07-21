@@ -731,6 +731,8 @@ img{
 
     padding:18px 50px;
 
+    margin-top:30px;
+
     border:none;
 
     border-radius:50px;
@@ -763,7 +765,9 @@ img{
 
     width:120px;
 
-    margin-bottom:25px;
+    margin-top:20px;
+
+    margin-bottom:20px;
 
     animation:cakeBounce 3s ease-in-out infinite;
 
@@ -1462,6 +1466,16 @@ img{
     font-size:18px;
 
     line-height:1.7;
+
+}
+
+.rabbit{
+
+    width:90px;
+
+    right:8px;
+
+    bottom:0;
 
 }
 
