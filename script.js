@@ -315,23 +315,17 @@ setTimeout(() => {
 
     birthdayScene.style.display = "flex";
 
-    gsap.fromTo(
+gsap.from(".birthday-card",{
 
-        birthdayScene,
+    y:40,
 
-        {
-            opacity:0,
-            scale:.95
-        },
+    opacity:0,
 
-        {
-            opacity:1,
-            scale:1,
-            duration:1.2,
-            ease:"power2.out"
-        }
+    duration:1,
 
-    );
+    ease:"power3.out"
+
+});
 
     birthdayFireworks();
 
