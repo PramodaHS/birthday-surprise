@@ -275,9 +275,9 @@ giftBox.addEventListener("click",()=>{
 
             confetti({
 
-                particleCount:350,
+                particleCount:180,
 
-                spread:180,
+                spread:120,
 
                 origin:{y:0.45}
 
@@ -327,7 +327,8 @@ setTimeout(() => {
         {
             opacity:1,
             scale:1,
-            duration:1
+            duration:1.2,
+            ease:"power2.out"
         }
 
     );
@@ -348,7 +349,7 @@ setTimeout(() => {
 
 function birthdayFireworks(){
 
-    const duration = 3000;
+    const duration = 2500;
 
     const end = Date.now() + duration;
 
@@ -356,15 +357,21 @@ function birthdayFireworks(){
 
         confetti({
 
-            particleCount:6,
+            particleCount:3,
 
-            spread:70,
+            spread:65,
 
-            startVelocity:35,
+            startVelocity:28,
+
+            ticks:180,
+
+            gravity:0.9,
+
+            scalar:0.9,
 
             origin:{
                 x:Math.random(),
-                y:Math.random()-0.2
+                y:Math.random()*0.5
             }
 
         });
@@ -403,13 +410,16 @@ gsap.to(".rabbit",{
 
 gsap.to("#favoritesBtn",{
 
-    scale:1.05,
+    scale:1.03,
+    y:-6,
 
-    duration:1,
+    duration:1.3,
 
     repeat:-1,
 
-    yoyo:true
+    yoyo:true,
+
+    ease:"power1.inOut"
 
 });
 

@@ -612,7 +612,7 @@ img{
 
 #birthdayScene{
 
-    position:absolute;
+    position:fixed;
     inset:0;
 
     display:none;
@@ -639,7 +639,7 @@ img{
     width:90%;
     max-width:850px;
 
-    padding:35px 45px;
+    padding:30px;
 
     border-radius:30px;
 
@@ -686,6 +686,28 @@ img{
     text-shadow:
         0 0 15px #ff69b4,
         0 0 35px #ff69b4;
+
+    animation:glowName 2.5s ease-in-out infinite;
+
+}
+
+@keyframes glowName{
+
+    0%,100%{
+
+        text-shadow:
+        0 0 15px #ff69b4,
+        0 0 35px #ff69b4;
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 25px #ff69b4,
+        0 0 55px #ff69b4;
+
+    }
 
 }
 
@@ -779,7 +801,7 @@ img{
 
     position:fixed;
 
-    width:90px;
+    width:55px;
 
     animation:floatBalloon 8s linear infinite;
 
@@ -925,11 +947,11 @@ img{
 
     position:fixed;
 
-    right:50px;
+    right:-15px;
 
     bottom:0;
 
-    width:180px;
+    width:110px;
 
     animation:rabbitJump 3s ease-in-out infinite;
 
@@ -1398,6 +1420,50 @@ img{
         line-height:1.8;
 
     }
+
+    .birthday-card{
+
+    width:92%;
+
+    padding:25px;
+
+}
+
+.cake{
+
+    width:90px;
+
+    margin-bottom:15px;
+
+}
+
+.birthday-card h3{
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+.birthday-card h1{
+
+    font-size:48px;
+
+}
+
+.birthday-card h2{
+
+    font-size:52px;
+
+}
+
+.birthday-card p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
 
 }
 
