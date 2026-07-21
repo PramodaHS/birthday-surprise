@@ -825,11 +825,13 @@ img{
 
     position:absolute;
 
-    width:70px;
+    width:55px;
 
-    opacity:.9;
+    opacity:.75;
 
-    z-index:2;
+    z-index:1;
+
+    pointer-events:none;
 
     animation:floatBalloon 10s linear infinite;
 
@@ -1455,14 +1457,14 @@ img{
 
     width:92%;
 
-    padding:20px 20px;
+    padding:25px 22px 40px;
 
 }
 }
 
 .cake{
 
-    width:90px;
+    width:100px;
 
     margin-bottom:15px;
 
@@ -1494,11 +1496,13 @@ img{
 
 .birthday-card p{
 
-    font-size:17px;
+    font-size:18px;
 
-    line-height:1.55;
+    line-height:1.7;
 
-    margin:14px auto;
+    max-width:290px;
+
+    margin:18px auto;
 
 }
 
@@ -1520,11 +1524,11 @@ img{
 
 .rabbit{
 
-    width:70px;
+    width:80px;
 
-    right:0;
+    right:8px;
 
-    bottom:95px;
+    bottom:110px;
 
 }
 
