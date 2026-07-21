@@ -717,11 +717,11 @@ img{
 
     max-width:650px;
 
-    margin:18px auto;
+    margin:18px auto 25px;
 
     font-size:20px;
 
-    line-height:1.8;
+    line-height:1.55;
 
     color:#ececec;
 
@@ -729,7 +729,7 @@ img{
 
 #favoritesBtn{
 
-    margin-top:25px;
+    margin-top:15px;
 
     padding:18px 50px;
 
@@ -808,6 +808,7 @@ img{
     position:fixed;
 
     width:55px;
+    opacity:.75;
 
     animation:floatBalloon 8s linear infinite;
 
@@ -1433,7 +1434,7 @@ img{
 
     width:92%;
 
-    padding:25px;
+     padding:25px 22px;
 
 }
 
@@ -1460,9 +1461,7 @@ img{
 }
 
 .birthday-card h2{
-
-    font-size:52px;
-
+    margin:8px 0 15px;
 }
 
 .birthday-card p{
@@ -1475,11 +1474,11 @@ img{
 
 .rabbit{
 
-    width:90px;
+    width:80px;
 
     right:8px;
 
-    bottom:0;
+    bottom:110px;
 
 }
 
