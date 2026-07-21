@@ -469,11 +469,13 @@ img{
 
 .moon{
 
-    width:100px;
-    height:100px;
+    width:120px;
 
-    top:20px;
-    right:20px;
+    height:120px;
+
+    top:40px;
+
+    right:-30px;
 
 }
 
@@ -763,11 +765,11 @@ img{
 
 .cake{
 
+    display:block;
+
+    margin:20px auto 20px auto;
+
     width:120px;
-
-    margin-top:20px;
-
-    margin-bottom:20px;
 
     animation:cakeBounce 3s ease-in-out infinite;
 
@@ -951,11 +953,13 @@ img{
 
     position:fixed;
 
-    right:-15px;
+    right:10px;
 
-    bottom:0;
+    bottom:120px;
 
-    width:110px;
+    width:90px;
+
+    z-index:15;
 
     animation:rabbitJump 3s ease-in-out infinite;
 
