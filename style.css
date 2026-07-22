@@ -1228,30 +1228,29 @@ img{
         margin-bottom:22px;
     }
 
-    .favorites-grid{
+.favorites-grid{
 
-        grid-template-columns:1fr;
-        gap:18px;
-    }
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
 
-    .favorite-card{
+.favorite-card{
 
-        padding:22px;
-        min-height:170px;
-    }
+    padding:18px 10px;
+    min-height:140px;
+}
 
-    .favorite-card img{
+.favorite-card img{
 
-        width:68px;
-        height:68px;
-        margin-bottom:18px;
-    }
+    width:58px;
+    height:58px;
+    margin-bottom:12px;
+}
 
-    .favorite-card h3{
+.favorite-card h3{
 
-        font-size:18px;
-    }
-
+    font-size:16px;
+}
     #favoriteMessage{
 
         width:100%;
