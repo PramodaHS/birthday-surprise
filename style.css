@@ -972,15 +972,16 @@ img{
 
     position:fixed;
 
-    right:20px;
+    right:18px;
+    bottom:35px;
 
-    bottom:30px;
+    width:90px;
 
-    width:120px;
-
-    z-index:2;
+    z-index:50;
 
     animation:rabbitJump 3s ease-in-out infinite;
+
+    pointer-events:none;
 
 }
 
