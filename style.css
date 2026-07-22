@@ -655,7 +655,7 @@ img{
         0 25px 70px rgba(0,0,0,.35),
         0 0 50px rgba(255,105,180,.12);
 
-    z-index:5;
+    z-index:10;
 
 }
 
@@ -808,12 +808,13 @@ img{
 .balloons{
 
     position:fixed;
-
     inset:0;
+
+    overflow:hidden;
 
     pointer-events:none;
 
-    z-index:2;
+    z-index:15;
 
 }
 
@@ -825,15 +826,9 @@ img{
 
     position:absolute;
 
-    width:55px;
+    width:60px;
 
-    opacity:.75;
-
-    z-index:1;
-
-    pointer-events:none;
-
-    animation:floatBalloon 10s linear infinite;
+    animation:floatBalloon 12s linear infinite;
 
 }
 
@@ -977,13 +972,13 @@ img{
 
     position:fixed;
 
-    right:5px;
+    right:20px;
 
-    bottom:70px;
+    bottom:30px;
 
-    width:85px;
+    width:120px;
 
-    z-index:20;
+    z-index:2;
 
     animation:rabbitJump 3s ease-in-out infinite;
 
@@ -1429,122 +1424,6 @@ img{
 
 }
 
-@media(max-width:768px){
-
-    .letter-card{
-
-        padding:30px;
-
-        max-height:88vh;
-
-    }
-
-    #letterScene h1{
-
-        font-size:36px;
-
-    }
-
-    .letter-text{
-
-        font-size:17px;
-
-        line-height:1.8;
-
-    }
-
-.birthday-card{
-
-    width:92%;
-
-    padding:25px 22px 40px;
-
-}
-}
-
-.cake{
-
-    width:100px;
-
-    margin-bottom:15px;
-
-}
-
-.birthday-card h3{
-
-    font-size:18px;
-
-    margin-bottom:15px;
-
-}
-
-.birthday-card h1{
-
-    font-size:44px;
-
-    margin:8px 0;
-
-}
-
-.birthday-card h2{
-
-    font-size:50px;
-
-    margin:5px 0 12px;
-
-}
-
-.birthday-card p{
-
-    font-size:18px;
-
-    line-height:1.7;
-
-    max-width:290px;
-
-    margin:18px auto;
-
-}
-
-.balloon{
-
-    width:45px;
-
-}
-
-.b1{ left:4%; }
-
-.b2{ left:18%; }
-
-.b3{ right:16%; }
-
-.b4{ right:4%; }
-
-.b5{ left:48%; }
-
-.rabbit{
-
-    width:80px;
-
-    right:8px;
-
-    bottom:110px;
-
-}
-
-.moon{
-
-    width:130px;
-
-    height:130px;
-
-    top:30px;
-
-    right:-35px;
-
-}
-
-
 /* ===========================
    SCENE TRANSITIONS
 =========================== */
@@ -1682,4 +1561,75 @@ button{
 
 .page.active{
     position:relative;
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width:768px){
+
+#birthdayScene{
+    padding:18px;
+}
+
+.birthday-card{
+    width:94%;
+    padding:22px 18px 28px;
+    border-radius:22px;
+}
+
+.cake{
+    width:95px;
+    margin:0 auto 14px;
+}
+
+.birthday-card h3{
+    font-size:16px;
+    margin-bottom:12px;
+    line-height:1.4;
+}
+
+.birthday-card h1{
+    font-size:52px;
+    margin:8px 0;
+}
+
+.birthday-card h2{
+    font-size:42px;
+    margin:6px 0 12px;
+}
+
+.birthday-card p{
+    max-width:100%;
+    font-size:18px;
+    line-height:1.6;
+    margin:15px auto 22px;
+}
+
+#favoritesBtn{
+    width:100%;
+    max-width:290px;
+    padding:15px 0;
+    margin-top:12px;
+    font-size:20px;
+}
+
+.rabbit{
+    width:82px;
+    right:6px;
+    bottom:88px;
+}
+
+.balloon{
+    width:48px;
+}
+
+.moon{
+    width:130px;
+    height:130px;
+    top:35px;
+    right:-40px;
+}
+
 }
