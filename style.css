@@ -1013,7 +1013,7 @@ img{
 
 #favoritesScene{
 
-    position:absolute;
+    position:fixed;
     inset:0;
 
     display:none;
@@ -1060,13 +1060,15 @@ img{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
 
-    gap:25px;
+    gap:18px;
 
     width:100%;
 
-    max-width:1100px;
+    max-width:900px;
+
+    margin:25px 0;
 
 }
 
@@ -1076,15 +1078,35 @@ img{
 
     backdrop-filter:blur(18px);
 
-    border-radius:25px;
+    border-radius:24px;
 
-    padding:18px;
+    border:1px solid rgba(255,255,255,.15);
+
+    padding:20px 15px;
+
+    min-height:180px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
 
     cursor:pointer;
 
     transition:.35s;
 
-    border:1px solid rgba(255,255,255,.15);
+}
+
+.favorite-card:hover{
+
+    transform:translateY(-8px) scale(1.03);
+
+    box-shadow:
+        0 15px 35px rgba(255,105,180,.25),
+        0 0 25px rgba(255,105,180,.2);
 
 }
 
@@ -1108,7 +1130,7 @@ img{
 
     object-fit:contain;
 
-    margin-bottom:15px;
+    margin-bottom:18px;
 
 }
 
@@ -1116,7 +1138,9 @@ img{
 
     color:white;
 
-    font-size:18px;
+    font-size:30px;
+
+    font-weight:700;
 
 }
 
@@ -1177,6 +1201,88 @@ img{
     transform:translateY(-5px);
 
     box-shadow:0 0 30px #ff69b4;
+
+}
+
+/* ===========================
+   Favorites Mobile
+=========================== */
+
+@media (max-width:768px){
+
+#favoritesScene{
+
+    padding:25px 18px 40px;
+
+}
+
+.favorites-title{
+
+    font-size:30px;
+
+    margin-bottom:8px;
+
+}
+
+.favorites-subtitle{
+
+    font-size:15px;
+
+    margin-bottom:18px;
+
+}
+
+.favorites-grid{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+}
+
+.favorite-card{
+
+    min-height:145px;
+
+    padding:18px;
+
+}
+
+.favorite-card img{
+
+    width:60px;
+
+    height:60px;
+
+    margin-bottom:12px;
+
+}
+
+.favorite-card h3{
+
+    font-size:20px;
+
+}
+
+#favoriteMessage{
+
+    width:100%;
+
+    font-size:17px;
+
+    margin-top:18px;
+
+}
+
+#terminalButton{
+
+    width:90%;
+
+    max-width:330px;
+
+    margin:20px auto 40px;
+
+}
 
 }
 
@@ -1565,7 +1671,7 @@ button{
 }
 
 /* =================================
-   MOBILE
+   MOBILE birthday card
 ================================= */
 
 @media (max-width:768px){
