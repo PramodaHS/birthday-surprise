@@ -1643,7 +1643,7 @@ button{
 
     max-width:280px;
 
-    height:58px;
+    height:58px;    
 
     font-size:20px;
 
@@ -1665,8 +1665,8 @@ button{
 }
 
 #letterScene h3{
-    font-size:22px !important;
-    margin-bottom:14px;
+    font-size:20px !important;
+    line-height:1.4;
 }
 
 #letterScene h1{
