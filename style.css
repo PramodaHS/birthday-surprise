@@ -1417,7 +1417,7 @@ img{
 
     .terminal-window{
         width:100%;
-        height:78vh;
+        height:74vh;
         border-radius:16px;
     }
 
@@ -1426,7 +1426,7 @@ img{
     }
 
     .terminal-header h3{
-        font-size:14px;
+        font-size:13px;
         margin-left:12px;
     }
 
@@ -1436,9 +1436,9 @@ img{
     }
 
     #terminalText{
-        padding:18px;
-        font-size:15px;
-        line-height:1.5;
+        padding:16px;
+        font-size:14px;
+        line-height:1.45;
         overflow-x:hidden;
         word-break:break-word;
     }
