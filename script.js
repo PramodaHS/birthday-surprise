@@ -584,7 +584,7 @@ function startTerminal() {
         "",
         "Loading Ice Cream....................... 🍦",
         "",
-        "Loading Rabbit Happiness................ 🐰",
+        "Loading Rabbit Cuteness................ 🐰",
         "",
         "Checking Birthday Mood................. ✔",
         "",
