@@ -1212,21 +1212,27 @@ img{
 
     #favoritesScene{
 
-        padding:120px 18px 35px;
+       padding:180px 18px 40px;
     }
 
-    .favorites-title{
+.favorites-title{
 
-        font-size:28px;
-        line-height:1.3;
-        margin-bottom:8px;
-    }
+    font-size:30px;
+    line-height:1.35;
+    margin-bottom:12px;
+    max-width:95%;
+    margin-left:auto;
+    margin-right:auto;
 
-    .favorites-subtitle{
+}
+.favorites-subtitle{
 
-        font-size:15px;
-        margin-bottom:22px;
-    }
+    font-size:16px;
+    line-height:1.6;
+    max-width:90%;
+    margin:0 auto 24px;
+
+}
 
 .favorites-grid{
 
