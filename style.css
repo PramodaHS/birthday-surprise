@@ -1210,14 +1210,18 @@ img{
 
 @media (max-width:768px){
 
-    #favoritesScene{
+#favoritesScene{
 
-       padding:180px 18px 40px;
-    }
+    padding:120px 18px 40px;
+
+    justify-content:flex-start;
+    align-items:center;
+
+}
 
 .favorites-title{
 
-    font-size:30px;
+    font-size:24px;
     line-height:1.35;
     margin-bottom:12px;
     max-width:95%;
@@ -1227,7 +1231,7 @@ img{
 }
 .favorites-subtitle{
 
-    font-size:16px;
+    font-size:15px;
     line-height:1.6;
     max-width:90%;
     margin:0 auto 24px;
@@ -1242,29 +1246,33 @@ img{
 
 .favorite-card{
 
-    padding:18px 10px;
-    min-height:140px;
+    padding:14px;
+    min-height:130px;
+
 }
 
 .favorite-card img{
 
-    width:58px;
-    height:58px;
+    width:48px;
+    height:48px;
     margin-bottom:12px;
+
 }
 
 .favorite-card h3{
-
-    font-size:16px;
+    font-size:18px;
+    margin-top:8px;
 }
-    #favoriteMessage{
+#favoriteMessage{
 
-        width:100%;
-        margin-top:24px;
-        font-size:18px;
-        line-height:1.5;
-        padding:16px;
-    }
+    width:100%;
+    margin-top:20px;
+    padding:14px 16px;
+    font-size:16px;
+    line-height:1.5;
+    border-radius:20px;
+
+}
 
     #terminalButton{
 
