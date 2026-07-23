@@ -1608,7 +1608,7 @@ section{
 @media (max-width: 768px) {
 
     section{
-        padding:20px 16px;
+         padding:20px 12px;
         
     }
 
@@ -1650,6 +1650,53 @@ button{
     margin-top:18px;
 
 }
+
+/* ===== Letter Scene Mobile ===== */
+
+#letterScene{
+    padding:20px 12px;
+}
+
+.letter-card{
+    width:100%;
+    max-height:88vh;
+    padding:28px 22px;
+    border-radius:22px;
+}
+
+#letterScene h3{
+    font-size:22px !important;
+    margin-bottom:14px;
+}
+
+#letterScene h1{
+    font-size:48px !important;
+    line-height:1.1;
+    margin-bottom:22px;
+}
+
+.letter-text{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.signature{
+    margin-top:30px;
+    font-size:20px;
+}
+
+.signature strong{
+    font-size:26px;
+}
+
+#finishBtn{
+    width:100%;
+    max-width:320px;
+    height:56px;
+    font-size:18px;
+    margin-top:28px;
+}
+
 /* ===========================
    MEMORY GRID
 =========================== */
